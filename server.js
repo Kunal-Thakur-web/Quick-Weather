@@ -50,6 +50,8 @@ app.get("/", async (req,res) => {
     const desc = mapWeather(resp.data.current.condition.text);
     const city = resp.data.location.name;
     const con = resp.data.location.country;
+    const windSpeed = resp.data.current.wind_mph;
+    const windDir = resp.data.current.wind_degree;
     const DayForecast = resp.data.forecast.forecastday.slice(0,5).map(el => ({
         Day: getDayName(el.date),
         max: Math.round(el.day.maxtemp_c),
@@ -86,6 +88,8 @@ app.get("/", async (req,res) => {
         lat,
         lon,
         desc,
+        windSpeed,
+        windDir,
         DayForecast,
         hourForecast,
         expected,
