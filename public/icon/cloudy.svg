@@ -1,0 +1,36 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- SUN (emoji-style: simple circle + short rays) -->
+  <g fill="#FFD93B" stroke="none">
+    <!-- sun circle -->
+    <circle cx="48" cy="28" r="14"/>
+
+    <!-- rays -->
+    <rect x="47" y="6" width="2" height="8" rx="1" fill="#FFD93B"/>
+    <rect x="47" y="42" width="2" height="8" rx="1" fill="#FFD93B"/>
+
+    <rect x="26" y="27" width="8" height="2" rx="1" fill="#FFD93B"/>
+    <rect x="62" y="27" width="8" height="2" rx="1" fill="#FFD93B"/>
+
+    <rect x="37" y="12" width="2" height="8" rx="1" transform="rotate(-45 38 16)" fill="#FFD93B"/>
+    <rect x="57" y="32" width="2" height="8" rx="1" transform="rotate(-45 58 36)" fill="#FFD93B"/>
+
+    <rect x="37" y="32" width="2" height="8" rx="1" transform="rotate(45 38 36)" fill="#FFD93B"/>
+    <rect x="57" y="12" width="2" height="8" rx="1" transform="rotate(45 58 16)" fill="#FFD93B"/>
+  </g>
+
+  <!-- CLOUD (emoji-style, white puffy shape) -->
+  <g fill="white" stroke="#DDE3E8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="
+      M18 52
+      C10 52, 6 46, 6 40
+      C6 33, 12 28, 19 28
+      C21 20, 28 15, 37 15
+      C46 15, 53 20, 55 28
+      C63 29, 68 35, 68 41
+      C68 48, 63 52, 56 52
+      Z
+    "/>
+  </g>
+
+</svg>

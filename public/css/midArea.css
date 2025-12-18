@@ -1,0 +1,280 @@
+.mid{
+    box-sizing: border-box;
+    margin-top: 2.5%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1.2fr 1fr;
+    gap: 4%;
+}
+
+
+.tempInfo{
+    height: 100%;
+    width: 100%;
+    grid-area: 1/ 1/ span 1/ span 1;
+}
+.infoCard{
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 1em;
+    box-sizing: border-box;
+    padding: 1em 1.5em;
+    display: flex;
+}
+.info{
+    height: 100%;
+    width: 60%;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 2%;
+}
+.loc{
+    grid-area: 1/1/span 1/span 1;
+    height: 100%;
+    width: 100%;
+}
+.locText{
+    display: inline-block;
+    font-size: 45%;
+    transform: scaleY(1.6);
+    transform-origin: top;
+    color: #faf6f6;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+}
+.temp{
+    grid-area: 2/1/span 1/span 1;
+    height: 100%;
+    width: 100%;
+}
+.tempText{
+    display: inline-block;
+    font-size: 165%;
+    font-weight: 900;
+    color: white;
+    transform: scaleX(1.5);
+    transform-origin: left;
+}
+.descText{
+    color: #faf6f6;
+    font-weight: 400;
+    opacity: 0.8;
+}
+.infoIcon{
+    height: 100%;
+    width: 40%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+
+.descForecast{
+    grid-area: 2/ 1/ span 1/ span 1;
+}
+.descCard{
+    height: 40%;
+    width: 63%;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 2em;
+    color: #faf6f6;
+    padding: 0em 1em;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+}
+
+
+.hourlyForecast{
+    grid-area: 1/ 3/ span 1/ span 1;
+    display: flex;
+    justify-content: right;
+}
+.hourlyCard{
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 1em;
+    box-sizing: border-box;
+    padding: 1em 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2%;
+}
+.hour1{
+    grid-area: auto;
+    box-sizing: border-box;
+    padding: 0.5em 0em;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.hour2{
+    grid-area: auto;
+    box-sizing: border-box;
+    padding: 0.5em 0em;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.hour3{
+    grid-area: auto;
+    box-sizing: border-box;
+    padding: 0.5em 0em;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.hour4{
+    grid-area: auto;
+    box-sizing: border-box;
+    padding: 0.5em 0em;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.hour5{
+    grid-area: auto;
+    box-sizing: border-box;
+    padding: 0.5em 0em;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.hourTemp{
+    font-size: 0.6em;
+    color: #faf6f6;
+    display: flex;
+    justify-content: center;
+}
+.time{
+    font-size: 0.6em;
+    color: #faf6f6;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.dailyForecast{
+    grid-area: 2/ 3/ span 1/ span 1;
+    display: flex;
+    justify-content: right;
+}
+.dailyCard{
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 1em;
+    box-sizing: border-box;
+    padding: 1.5em 1.5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2%;
+}
+.day1{
+    grid-area: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.day2{
+    grid-area: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.day3{
+    grid-area: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.day4{
+    grid-area: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.day5{
+    grid-area: auto;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+}
+.dayTemp{
+    font-size: 0.6em;
+    color: #faf6f6;
+}
+.Day{
+    font-size: 0.6em;
+    color: #faf6f6;
+    display: flex;
+    justify-content: center;
+}
+
+
+.dayDesc{
+    grid-area: 2/ 2/ span 1/ span 1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    -webkit-text-stroke: 0.8px currentColor;
+    letter-spacing: -0.5px;
+}
+
+
+/* icon classes */
+
+.sunnyIcon{
+    background-image: url("/icon/sunny.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.rainIcon{
+    background-image: url("/icon/rain.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.drizzleIcon{
+    background-image: url("/icon/drizzle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.snowIcon{
+    background-image: url("/icon/snow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cloudyIcon{
+    background-image: url("/icon/cloudy.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.thunderIcon{
+    background-image: url("/icon/thunder.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

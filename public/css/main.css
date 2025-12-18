@@ -1,0 +1,178 @@
+html, body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+*{
+    font-family: "Poppins",sans-serif;
+}
+
+
+body {
+    transition: background 0.6s ease;
+}
+
+.main{
+    height: 85%;
+    width: 85%;
+    border-radius: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7em;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.secondary{
+    height: 96%;
+    width: 98%;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0.7em;
+    padding: 1em 2em;
+
+    display: grid;
+    grid-template-rows: 15% 60% 25%;
+}
+
+
+
+
+/* body background */
+
+.sunny-bg {
+  background: linear-gradient(135deg, #FFD35C, #FF9F1C 50%, #FF6A00);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.cloudy-bg {
+  background: linear-gradient(135deg, #D9D9D9, #BFBFBF 50%, #A6A6A6);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.drizzle-bg {
+  background: linear-gradient(135deg, #AFC3D2, #8FA8B8 50%, #6F8A9D);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.rain-bg {
+  background: linear-gradient(135deg, #4B6478, #2F4A60 50%, #1C2F42);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.snow-bg {
+  background: linear-gradient(135deg, #F2FAFF, #D7EAF4 50%, #BAD4E3);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.thunder-bg {
+  background: linear-gradient(135deg, #1B1C2A, #2B3A55 50%, #0D0F17);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+/* outline box background */
+
+.sunny-outline {
+    background-color: rgba(255, 200, 60, 0.9);
+    box-shadow: 0 0 45px rgba(255, 180, 40, 0.5);
+}
+
+.cloudy-outline {
+    background-color: rgba(210, 210, 210, 0.7);
+    box-shadow: 0 0 40px rgba(200, 200, 200, 0.4);
+}
+
+.drizzle-outline {
+    background-color: rgba(150, 180, 200, 0.7);
+    box-shadow: 0 0 40px rgba(130, 160, 185, 0.45);
+}
+
+.rain-outline {
+    background-color: rgba(60, 100, 140, 0.7);
+    box-shadow: 0 0 45px rgba(50, 90, 130, 0.55);
+}
+
+.snow-outline {
+    background-color: rgba(220, 240, 255, 0.9);
+    box-shadow: 0 0 45px rgba(210, 230, 250, 0.6);
+}
+
+.thunder-outline {
+    background-color: rgba(110, 130, 255, 0.8);
+    box-shadow: 0 0 55px rgba(80, 100, 255, 0.55);
+}
+
+
+
+/* Card background */
+
+.sunny{
+    background-image: url("/images/sunny.jpg");
+}
+
+.rain{
+    background-image: url("/images/rain.webp");
+}
+
+.drizzle{
+    background-image: url("/images/drizzle.webp");
+}
+
+.thunder{
+    background-image: url("/images/thunder.jpg");
+}
+
+.cloudy{
+    background-image: url("/images/cloudy.jpg");
+}
+
+.snow{
+    background-image: url("/images/snow.jpeg");
+}
+
+
+/* text settings */
+
+
+.quick-sunny { color: #F6E9A3; }
+.weather-sunny { color: #FFFFFF; }
+.dayDesc-sunny { color: #D7D7D7; }
+
+.quick-rain { color: #F0F0F0; }
+.weather-rain { color: #DADADA; }
+.dayDesc-rain { color: #C0C0C0; }
+
+.quick-cloudy { color: #E8ECEF; }
+.weather-cloudy { color: #C8D0D6; }
+.dayDesc-cloudy { color: #AEB7BD; }
+
+.quick-drizzle { color: #DDE6EC; }
+.weather-drizzle { color: #B8C4CC; }
+.dayDesc-drizzle { color: #97A5AE; }
+
+.quick-snow { color: #1C2A33; }
+.weather-snow { color: #2F4450; }
+.dayDesc-snow { color: #4B6470; }
+
+.quick-thunder { color: #FDFEFF; }
+.weather-thunder { color: #6C8AA3; }
+.dayDesc-thunder { color: #b6c9d9; }
+
+

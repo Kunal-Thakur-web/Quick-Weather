@@ -1,0 +1,45 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- CLOUD -->
+  <g fill="#E6F4FF" stroke="#DDE3E8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="
+      M20 55
+      C12 55, 8 48, 8 42
+      C8 34, 14 28, 22 28
+      C23 20, 30 14, 40 14
+      C50 14, 57 20, 58 28
+      C67 29, 72 35, 72 42
+      C72 50, 66 55, 58 55
+      Z">
+      <animateTransform attributeName="transform" type="translate"
+        values="0 0; 0 -3; 0 0" dur="3s" repeatCount="indefinite" />
+    </path>
+  </g>
+
+  <!-- RAIN STREAKS -->
+  <g stroke="#DDE3E8" stroke-width="4" stroke-linecap="round">
+
+    <line x1="28" y1="58" x2="24" y2="72">
+      <animate attributeName="y1" values="58;75;58" dur="0.9s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="72;90;72" dur="0.9s" repeatCount="indefinite"/>
+    </line>
+
+    <line x1="40" y1="58" x2="36" y2="72">
+      <animate attributeName="y1" values="58;75;58" dur="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="72;90;72" dur="0.7s" repeatCount="indefinite"/>
+    </line>
+
+    <line x1="54" y1="58" x2="50" y2="72">
+      <animate attributeName="y1" values="58;75;58" dur="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="72;90;72" dur="0.5s" repeatCount="indefinite"/>
+    </line>
+
+  </g>
+
+  <!-- LIGHTNING BOLT -->
+  <path d="M40 50l-8 14h8l-4 14 14-20h-8l6-8h-8z"
+        fill="#DDE3E8">
+    <animate attributeName="opacity" values="1;0.2;1" dur="0.6s" repeatCount="indefinite"/>
+  </path>
+
+</svg>

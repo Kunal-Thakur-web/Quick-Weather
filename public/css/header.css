@@ -1,0 +1,48 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em;
+}
+.title{
+    height: 100%;
+    width: 22%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.searchbar{
+    height: 100%;
+    width: 50%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.quick{
+    font-size: 150%;
+    font-weight: 1000;
+}
+.weather{
+    font-size: 150%;
+    font-weight: 1000;
+}
+.bar{
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    opacity: 0.4;
+    color: rgba(90, 70, 20, 0.45);
+    box-sizing: border-box;
+    padding: 1em;
+}
+#searchForm{
+    width: 65%;
+    height: 50%;
+}
+.clicked{
+    opacity: 1;
+    color: black;
+}

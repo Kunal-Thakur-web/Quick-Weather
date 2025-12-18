@@ -1,0 +1,30 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#E6F4FF" stroke="#DDE3E8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <!-- cloud -->
+    <path d="
+      M20 55
+      C12 55, 8 48, 8 42
+      C8 34, 14 28, 22 28
+      C23 20, 30 14, 40 14
+      C50 14, 57 20, 58 28
+      C67 29, 72 35, 72 42
+      C72 50, 66 55, 58 55
+      Z"/>
+
+    <!-- rain streaks -->
+    <line x1="30" y1="58" x2="26" y2="72" stroke="#DDE3E8">
+      <animate attributeName="y1" values="58;75;58" dur="0.9s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="72;90;72" dur="0.9s" repeatCount="indefinite"/>
+    </line>
+
+    <line x1="45" y1="58" x2="41" y2="72" stroke="#DDE3E8">
+      <animate attributeName="y1" values="58;75;58" dur="0.7s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="72;90;72" dur="0.7s" repeatCount="indefinite"/>
+    </line>
+
+    <line x1="60" y1="58" x2="56" y2="72" stroke="#DDE3E8">
+      <animate attributeName="y1" values="58;75;58" dur="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="y2" values="72;90;72" dur="0.5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+</svg>

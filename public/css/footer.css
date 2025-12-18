@@ -1,0 +1,219 @@
+.footer{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    gap: 1.5em;
+    box-sizing: border-box;
+    /* padding: 1em; */
+}
+
+
+
+.locData{
+    grid-area: 1/1/span 1/span 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1em;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    padding: 0.5em;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    gap: 0.3em;
+}
+.globe{
+    grid-area: 1/1/span 1/span 1;
+    width: 100%;
+    height: 100%;
+    background-image: url("/icon/globe.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cityCon{
+    grid-area: 2/1/span1 /span 1;
+    width: 100%;
+    height: 100%;
+    font-size: small;
+    color: #faf6f6;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.aqi{
+    grid-area: 1/2/span 1/span 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1em;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    box-sizing: border-box;
+    padding: 0.5em;
+}
+
+.mainIndex{
+    grid-area: 1/1/span 2/span 1;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid rgba(188 184 184 / 20%);
+}
+
+:root {
+  --aqiColor: #4F7F5F;
+}
+
+
+.aqiIndCont{
+    height: 75%;
+    aspect-ratio: 1/1;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+    background: rgba(79, 78, 78, 0.18);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    border-left: 7px solid;
+}
+
+.aqiValue{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+    font-weight: bolder;
+}
+.aqiDesc{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #dcd7d7;
+    font-size: small;
+    font-weight: lighter;
+}
+
+.subIndex {
+    grid-area: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subIndexCont{
+    height: 55%;
+    aspect-ratio: 2/1;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+    background: rgba(79, 78, 78, 0.18);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    border-left: 7px solid;
+}
+.subIndexValue{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+    color: white;
+    font-weight: normal;
+}
+.subIndexDesc{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    color: #dcd7d7;
+    font-size: 0.6em;
+    font-weight: lighter;
+}
+
+.aqi-good {
+  border-left-color: #4F7F5F;
+}
+
+.aqi-moderate {
+  border-left-color: #8A8F4A;
+}
+
+.aqi-poor {
+  border-left-color: #9A6B3F;
+}
+
+.aqi-unhealthy {
+  border-left-color: #8F4B3A;
+}
+
+.aqi-severe {
+  border-left-color: #7A3A3F;
+}
+
+.aqi-hazardous {
+  border-left-color: #4B2F3A;
+}
+
+
+
+.wind {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 1em;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    display: grid;
+    box-sizing: border-box;
+    padding: 0.5em;
+    grid-template-rows: 80% 20%;
+    grid-template-columns: 100%;
+    gap: 0.3em;
+}
+
+
+.compass{
+    grid-area: 1/ 1/ span 1/span 1;
+    max-height: 100%;
+    max-width: 100%;
+    justify-self: center;
+}
+
+.compSquare{
+    height: 100%;
+    aspect-ratio: 1/1;
+}
+
+.wind-compass .needle {
+  transform: rotate(var(--angle, 0deg));
+  transition: transform 0.6s ease;
+}
+
+.windText{
+    text-align: center;
+    font-size: small;
+    color: #e0dada;
+    font-weight: lighter;
+}

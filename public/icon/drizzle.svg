@@ -1,0 +1,74 @@
+<svg width="80" height="80" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- CLOUD -->
+  <g fill="#E6F4FF" stroke="#DDE3E8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="
+      M20 55
+      C12 55, 8 48, 8 42
+      C8 34, 14 28, 22 28
+      C23 20, 30 14, 40 14
+      C50 14, 57 20, 58 28
+      C67 29, 72 35, 72 42
+      C72 50, 66 55, 58 55
+      Z">
+      <animateTransform 
+        attributeName="transform" 
+        type="translate"
+        values="0 0; 0 -3; 0 0" 
+        dur="3s" 
+        repeatCount="indefinite"
+      />
+    </path>
+  </g>
+
+  <!-- TEARDROP SHAPES FOR DRIZZLE -->
+  <g fill="#DDE3E8">
+
+    <!-- Drop 1 -->
+    <path d="M28 60 
+             Q26 64, 28 66 
+             Q30 64, 28 60 Z">
+      <animate attributeName="d"
+        values="
+          M28 60 Q26 64, 28 66 Q30 64, 28 60 Z;
+          M28 65 Q26 69, 28 71 Q30 69, 28 65 Z;
+          M28 60 Q26 64, 28 66 Q30 64, 28 60 Z
+        "
+        dur="1.4s"
+        repeatCount="indefinite"
+      />
+    </path>
+
+    <!-- Drop 2 -->
+    <path d="M45 60 
+             Q43 64, 45 66 
+             Q47 64, 45 60 Z">
+      <animate attributeName="d"
+        values="
+          M45 60 Q43 64, 45 66 Q47 64, 45 60 Z;
+          M45 65 Q43 69, 45 71 Q47 69, 45 65 Z;
+          M45 60 Q43 64, 45 66 Q47 64, 45 60 Z
+        "
+        dur="1.2s"
+        repeatCount="indefinite"
+      />
+    </path>
+
+    <!-- Drop 3 -->
+    <path d="M60 60 
+             Q58 64, 60 66 
+             Q62 64, 60 60 Z">
+      <animate attributeName="d"
+        values="
+          M60 60 Q58 64, 60 66 Q62 64, 60 60 Z;
+          M60 65 Q58 69, 60 71 Q62 69, 60 65 Z;
+          M60 60 Q58 64, 60 66 Q62 64, 60 60 Z
+        "
+        dur="1s"
+        repeatCount="indefinite"
+      />
+    </path>
+
+  </g>
+
+</svg>
