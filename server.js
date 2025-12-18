@@ -1,5 +1,3 @@
-// using weatherapi for getting the weather info with id-kt1157862@gmail.com and pass-kanumanukanu
-
 import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
@@ -68,7 +66,15 @@ app.get("/", async (req,res) => {
         temp: el.temp_c,
         desc: mapWeather(el.condition.text),
     }));
-    const aqi = resp.data.current.air_quality;
+    const base = resp.data.current.air_quality;
+    const aqiObj = calculateAQIFromUGM3Conc({
+        pm25: base.pm2_5,
+        pm10: base.pm10,
+        o3: base.o3,
+        co: base.co,
+        no2: base.no2,
+        so2: base.so2
+    });
     const expected = forecastSummary(hourForecast);
 
 
@@ -83,7 +89,7 @@ app.get("/", async (req,res) => {
         DayForecast,
         hourForecast,
         expected,
-        aqi,
+        aqiObj,
     });
 });
 
@@ -134,10 +140,6 @@ app.get("/search",async (req,res) => {
 
     const expected = forecastSummary(hourForecast);
 
-    // console.log(resp.data.current.condition);
-    // console.log(resp.data.current.air_quality);
-    // console.log(aqiObj);
-    // console.log(resp.data.forecast.forecastday[0].hour);
     res.render("index.ejs",{
         city,
         con,
@@ -150,7 +152,7 @@ app.get("/search",async (req,res) => {
         DayForecast,
         hourForecast,
         expected,
-        aqiObj,
+        aqiObj
     });
 }) 
 
