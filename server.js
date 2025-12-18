@@ -58,8 +58,8 @@ app.get("/", async (req,res) => {
         min: Math.round(el.day.mintemp_c),
         desc: mapWeather(el.day.condition.text),
     }));
-    const today = new Date();
-    let hour = today.getHours();
+    const localtime = resp.data.location.localtime; 
+    const hour = parseInt(localtime.slice(11, 13), 10);
     if(hour > 19) {
         hour = 19;
     }
@@ -122,8 +122,8 @@ app.get("/search",async (req,res) => {
         min: Math.round(el.day.mintemp_c),
         desc: mapWeather(el.day.condition.text),
     }));
-    const today = new Date();
-    let hour = today.getHours();
+    const localtime = resp.data.location.localtime;
+    const hour = parseInt(localtime.slice(11, 13), 10);
     if(hour > 19) {
         hour = 19;
     }
