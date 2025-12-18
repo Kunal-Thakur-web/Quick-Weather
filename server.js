@@ -4,11 +4,13 @@ import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
 import {mapWeather , forecastSummary , getDayName, timeConvert,calculateAQIFromUGM3Conc} from "./utilities/functions.js";
+import dotenv from "dotenv";
+dotenv.config();
 
 
 const app = express();
-const port = 3000;
-const ApiKey = "f4d19063b66d48a7a14172941251412";
+const PORT = process.env.PORT || 3000;
+const API_KEY = process.env.API_KEY;
 const Api_Url = "http://api.weatherapi.com/v1/forecast.json";
 
 
@@ -36,7 +38,7 @@ app.get("/", async (req,res) => {
     // ];
     const config = {
         params : {
-            "key": ApiKey,
+            "key": API_KEY,
             "q" : "Panipat,India",
             "days": "5",
             "aqi": "yes",
@@ -88,7 +90,7 @@ app.get("/", async (req,res) => {
 app.get("/search",async (req,res) => {
     const config = {
         params : {
-            "key": ApiKey,
+            "key": API_KEY,
             "q" : req.query.addr,
             "days": "5",
             "aqi": "yes",
@@ -135,7 +137,7 @@ app.get("/search",async (req,res) => {
     // console.log(resp.data.current.condition);
     // console.log(resp.data.current.air_quality);
     // console.log(aqiObj);
-    console.log(resp.data.forecast.forecastday[0].hour);
+    // console.log(resp.data.forecast.forecastday[0].hour);
     res.render("index.ejs",{
         city,
         con,
@@ -154,6 +156,6 @@ app.get("/search",async (req,res) => {
 
 
 
-app.listen(port, () => {
-    console.log("Server running on port " + port);
+app.listen(PORT, () => {
+    console.log("Server running on port " + PORT);
 })
