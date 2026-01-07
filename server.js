@@ -14,7 +14,7 @@ const Api_Url = "http://api.weatherapi.com/v1/forecast.json";
 
 
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({extented: false}));
+app.use(bodyParser.urlencoded({extended: false}));
 
 
 
@@ -116,7 +116,7 @@ app.get("/search",async (req,res) => {
     const con = resp.data.location.country;
     const windSpeed = resp.data.current.wind_mph;
     const windDir = resp.data.current.wind_degree;
-    const DayForecast = resp.data.forecast.forecastday.slice(0,5).map(el => ({
+    const DayForecast = resp.data.forecast.forecastday.slice(0,3).map(el => ({
         Day: getDayName(el.date),
         max: Math.round(el.day.maxtemp_c),
         min: Math.round(el.day.mintemp_c),
