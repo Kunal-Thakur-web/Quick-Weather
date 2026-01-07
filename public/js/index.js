@@ -74,9 +74,6 @@ setWeatherIcon(hourForecast[4].desc, document.querySelector(".hour5").children[1
 setWeatherIcon(dayForecast[0].desc, document.querySelector(".day1").children[1]);
 setWeatherIcon(dayForecast[1].desc, document.querySelector(".day2").children[1]);
 setWeatherIcon(dayForecast[2].desc, document.querySelector(".day3").children[1]);
-setWeatherIcon(dayForecast[3].desc, document.querySelector(".day4").children[1]);
-setWeatherIcon(dayForecast[4].desc, document.querySelector(".day5").children[1]);
-
 
 const compass = document.querySelector(".wind-compass");
 

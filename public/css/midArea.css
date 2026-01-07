@@ -213,6 +213,8 @@
 .dayTemp{
     font-size: 0.6em;
     color: #faf6f6;
+    display: flex;
+    justify-content: center;
 }
 .Day{
     font-size: 0.6em;
